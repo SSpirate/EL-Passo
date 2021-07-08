@@ -8,16 +8,16 @@
 
 package com.herumi.mcl;
 
-public class G1 {
+public class GT {
   private transient long swigCPtr;
   protected transient boolean swigCMemOwn;
 
-  protected G1(long cPtr, boolean cMemoryOwn) {
+  protected GT(long cPtr, boolean cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = cPtr;
   }
 
-  protected static long getCPtr(G1 obj) {
+  protected static long getCPtr(GT obj) {
     return (obj == null) ? 0 : obj.swigCPtr;
   }
 
@@ -30,56 +30,48 @@ public class G1 {
     if (swigCPtr != 0) {
       if (swigCMemOwn) {
         swigCMemOwn = false;
-        MclJNI.delete_G1(swigCPtr);
+        MclJNI.delete_GT(swigCPtr);
       }
       swigCPtr = 0;
     }
   }
 
-  public G1() {
-    this(MclJNI.new_G1__SWIG_0(), true);
+  public GT() {
+    this(MclJNI.new_GT__SWIG_0(), true);
   }
 
-  public G1(G1 rhs) {
-    this(MclJNI.new_G1__SWIG_1(G1.getCPtr(rhs), rhs), true);
+  public GT(GT rhs) {
+    this(MclJNI.new_GT__SWIG_1(GT.getCPtr(rhs), rhs), true);
   }
 
-  public G1(Fp x, Fp y) {
-    this(MclJNI.new_G1__SWIG_2(Fp.getCPtr(x), x, Fp.getCPtr(y), y), true);
-  }
-
-  public boolean equals(G1 rhs) {
-    return MclJNI.G1_equals(swigCPtr, this, G1.getCPtr(rhs), rhs);
-  }
-
-  public void set(Fp x, Fp y) {
-    MclJNI.G1_set(swigCPtr, this, Fp.getCPtr(x), x, Fp.getCPtr(y), y);
+  public boolean equals(GT rhs) {
+    return MclJNI.GT_equals(swigCPtr, this, GT.getCPtr(rhs), rhs);
   }
 
   public void clear() {
-    MclJNI.G1_clear(swigCPtr, this);
+    MclJNI.GT_clear(swigCPtr, this);
   }
 
   public void setStr(String str, int base) {
-    MclJNI.G1_setStr__SWIG_0(swigCPtr, this, str, base);
+    MclJNI.GT_setStr__SWIG_0(swigCPtr, this, str, base);
   }
 
   public void setStr(String str) {
-    MclJNI.G1_setStr__SWIG_1(swigCPtr, this, str);
+    MclJNI.GT_setStr__SWIG_1(swigCPtr, this, str);
   }
 
   public String toString(int base) {
-    return MclJNI.G1_toString__SWIG_0(swigCPtr, this, base);
+    return MclJNI.GT_toString__SWIG_0(swigCPtr, this, base);
   }
 
   public String toString() {
-    return MclJNI.G1_toString__SWIG_1(swigCPtr, this);
+    return MclJNI.GT_toString__SWIG_1(swigCPtr, this);
   }
 
   public void deserialize(byte[] cbuf) {
-    MclJNI.G1_deserialize(swigCPtr, this, cbuf);
+    MclJNI.GT_deserialize(swigCPtr, this, cbuf);
   }
 
-  public byte[] serialize() { return MclJNI.G1_serialize(swigCPtr, this); }
+  public byte[] serialize() { return MclJNI.GT_serialize(swigCPtr, this); }
 
 }
