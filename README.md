@@ -35,25 +35,14 @@ Based on the application scenario, EL PASSO can also be built to provide followi
 * Lost recover when Alice lost her certificate.
 * Identity information recovery with the help of one or a number of authorities in case a user misbehaves at the RP.
 
-## 1.2 To cite our work
 
-```ascii
-@article{zhang2020elpasso,
-  title={EL PASSO: Efficient and Lightweight Privacy-preserving Single Sign On},
-  author={Zhang, Zhiyi and Król, Michał and Sonnino, Alberto and Zhang, Lixia and Riviere, Etienne},
-  journal={Proceedings on Privacy Enhancing Technologies},
-  volume={2021},
-  number={2},
-  publisher={Sciendo}
-}
-```
 
 ## 2. Quick Start
 
 ### 2.1 Download
 
 ```bash
-git clone --recurse-submodules https://github.com/Zhiyi-Zhang/PSSignature.git
+git clone --recurse-submodules https://github.com/SSpirate/EL-Passo.git
 ```
 
 ### 2.2 Build with Make
@@ -197,9 +186,5 @@ We also provide a brief description of the steps here:
 
 See [documentation page](Documentation.md).
 
-## 5. Issue report and Contribution
 
-If you encounter any issues, please start a new issue [here](https://github.com/Zhiyi-Zhang/PS-Signature-and-EL-PASSO/issues).
-
-If you want to contribute to the codebase, please submit a new pull request [here](https://github.com/Zhiyi-Zhang/PS-Signature-and-EL-PASSO/pulls).
 
