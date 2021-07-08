@@ -1,0 +1,10 @@
+.vscode
+build
+*.o
+*.bc
+*.a
+*.so
+ps-tests
+encoding-tests
+third-parties/mcl-wasm
+temp
